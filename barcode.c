@@ -13,6 +13,9 @@ typedef unsigned char byte;
 typedef unsigned char bool;
 typedef struct input_event input_event;
 
+// This script prints a bar code followed by a \n.
+// just read the stdout.
+
 char get_char_from_scancode(byte code)
 {
 	// TODO: Add support for more scan codes and stuff
