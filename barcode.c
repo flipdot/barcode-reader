@@ -19,6 +19,7 @@ typedef struct input_event input_event;
 char get_char_from_scancode(byte code)
 {
 	// TODO: Add support for more scan codes and stuff
+	// See: http://www.cs.fsu.edu/~baker/devices/lxr/http/source/linux/include/linux/input.h?v=2.6.11.8
 	if(KEY_1 <= code && code <= KEY_9)
 		return '1' + (code - KEY_1);
 	if(code == KEY_0)
