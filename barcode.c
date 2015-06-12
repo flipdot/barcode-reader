@@ -45,6 +45,7 @@ int main(int argc, char** argv)
 		{
 			fputs("lolzuklein", stderr);
 			fclose(input);
+			input = nullptr;
 			return 2;
 		}
 		switch(ev.type)
@@ -82,5 +83,6 @@ int main(int argc, char** argv)
 		}
 	}
 	fclose(input);
+	input = nullptr;
 	return 0;
 }
