@@ -1,10 +1,12 @@
 # barcode-reader
 
 ## Prerequisite
-1. Install evdev:
-  <code>pip install evdev</code>
+1. You need make.
 
-## Usage
-  <code>python input.py</code>
+## Build & Run
+```bash
+make
+./barcode
+```
   
-The scanned barcodes are printed to stdout line by line
+The scanned barcodes are printed to stdout line by line. Only codes containing only digits are supported.
