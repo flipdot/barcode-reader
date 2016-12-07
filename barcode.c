@@ -95,7 +95,8 @@ int main(int argc, char** argv)
 					putchar('E');
 				}
 				current_char = get_char_from_scancode(ev.code);
-				putchar(current_char);
+				if current_char:
+					putchar(current_char);
 				break;
 			case EV_MSC:
 				//printf("EV_MSC\tcode: %x value: %x", ev.code, ev.value);
